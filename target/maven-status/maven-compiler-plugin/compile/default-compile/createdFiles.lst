@@ -1,0 +1,8 @@
+ec\edu\espoch\rutaspendientes\clases\Segmento.class
+ec\edu\espoch\rutaspendientes\RutasPendientes.class
+ec\edu\espoch\rutaspendientes\controlador\RutaControlador.class
+ec\edu\espoch\rutaspendientes\utilidades\CalculadoraPendientes.class
+ec\edu\espoch\rutaspendientes\vista\MainWindow.class
+ec\edu\espoch\rutaspendientes\clases\Coordenada.class
+ec\edu\espoch\rutaspendientes\clases\Ruta.class
+ec\edu\espoch\rutaspendientes\utilidades\CargadorDatos.class
