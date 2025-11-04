@@ -92,6 +92,7 @@ public class Ruta {
                puntos.size() + " puntos)";
     }
     
+    @Override
     public String toString() {
         return String.format("Ruta: %s (%s→%s, %d puntos, %d segmentos)", 
             nombre, origen, destino, puntos.size(), segmentos.size());
@@ -103,5 +104,5 @@ public class Ruta {
     // Pendiente = (elevación en metros / distancia en metros) * 100
     double distanciaMetros = distancia * 1000;
     return (elevacion / distanciaMetros) * 100;
-}
+    }
 }
