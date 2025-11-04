@@ -34,7 +34,7 @@ public class MainWindow extends Application
     public void start(Stage primaryStage) {
         controlador = new RutaControlador();
         //Configurar ventana
-        primaryStage.setTitle("RutasPendientes - Analizador v0.3");
+        primaryStage.setTitle("RutasPendientes - Analizador v1.0");
         primaryStage.setWidth(600);
         primaryStage.setHeight(500);
         // Layout principal
@@ -48,17 +48,14 @@ public class MainWindow extends Application
          labelArchivo = new Label("Ningun archivo seleccionado");
         labelArchivo.setStyle("-fx-font-size: 12px; -fx-text-fill: #666;");
         //Boton seleccionar archivo
-        
         Button btnSeleccionar = new Button("📁 Seleccionar CSV");
         btnSeleccionar.setStyle("-fx-font-size: 14px; -fx-padding: 10px 20px;");
         btnSeleccionar.setOnAction(e -> seleccionarArchivo());
-        
         // Botón para cargar y analizar
         Button btnCargar = new Button(" Cargar y Analizar");
         btnCargar.setStyle("-fx-font-size: 14px; -fx-padding: 10px 20px; " +
                           "-fx-background-color: #4CAF50; -fx-text-fill: white;");
         btnCargar.setOnAction(e -> cargarYAnalizar());
-
         // Área de resultados
         areaResultados = new TextArea();
         areaResultados.setEditable(false);
@@ -66,9 +63,9 @@ public class MainWindow extends Application
         areaResultados.setPrefHeight(250);
         areaResultados.setText(
             "INSTRUCCIONES:\n\n" +
-            "1. Haz clic en 'Seleccionar CSV'\n" +
+            "1. Haz clic en Seleccionar CSV\n" +
             "2. Elige tu archivo de rutas\n" +
-            "3. Haz clic en 'Cargar y Analizar'\n\n" +
+            "3. Haz clic en Cargar y Analizar\n\n" +
             "Formato esperado del CSV:\n" +
             "lat_inicial, lon_inicial, lat_final, lon_final, distancia_km, elevacion_m\n\n" +
             "Ejemplo:\n" +
